@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href="/public/output.css" rel="stylesheet">
+
+  <title>Tailwind Playground</title>
+</head>
+
+<body class="bg-main-bg">
+  <main class="block">
+
+    <!-- HEADER -->
+    <header class="pt-8  flex justify-between items-center max-w-screen-xl		mx-auto ">
+      <!-- LOGO -->
+      <h1 class=""><a href="#"><img src="images/logo_Gaslur.svg" alt="Gaslur"></a></h1>
+
+      <!-- NAvigation -->
+      <nav>
+        <ul class="flex justify-between">
+          <li><a href="#" class="text-nav-color text-xs center px-4 hover:text-nav-hover ">Home</a></li>
+          <li><a href="#" class="text-nav-color text-xs center px-4 hover:text-nav-hover">My profile</a></li>
+          <li><a href="#" class="text-nav-color text-xs center px-4 hover:text-nav-hover">activity</a></li>
+          <li><a href="#" class="text-nav-color text-xs center px-4 hover:text-nav-hover">how it works</a></li>
+        </ul>
+      </nav>
+
+      <!-- SIGN-IN Link -->
+      <div class="flex justify-between items-center">
+        <a href="#"
+          class="block uppercase text-nav-color text-xs center border border-solid	 border-slate-300 rounded-md px-8 py-2 hover:text-nav-hover hover:border-[#9B51E0]">create</a>
+        <a href="#" class="block uppercase text-nav-color text-xs center ml-8 hover:text-nav-hover">sign in</a>
+      </div>
+    </header>
+
+
+    <!-- HERO -->
+    <section class="max-w-screen-xl	mx-auto">
+      <div class="relative py-44 bg-[url('images/bg_ellipse_pink.png')] bg-no-repeat bg-center bg-contain">
+        <!-- Left :: text-->
+        <div>
+          <h3 class="text-white font-semibold text-7xl leading-7xl w-full ">Discover, collect, <br />and charity in
+            <br />extraordinary NFT <br />marketplace</h3>
+          <p class="text-nav-color font-nor mal text-2xl	w-full mt-6">In aenean posuere lorem risus nec. Tempor
+            <br />tincidunt aenean purus purus vestibulum nibh mi <br />venenatis</p>
+
+          <!-- HERO Links-->
+          <div class="flex justify-betwwen mt-8">
+            <a href="#"
+              class="text-white w-52 py-4 text-center rounded-2xl border border-solid border-slate-100  transition-all	 duration-300  ease-in  hover:border-main-bg hover:bg-gradient-to-r from-gradient-start to-gradient-end">Explore</a>
+            <a href="#"
+              class="text-white w-52 py-4 text-center rounded-2xl border border-solid border-slate-100  ml-8 transition-all	 duration-300  ease-in  hover:border-main-bg hover:bg-gradient-to-r from-gradient-start to-gradient-end">Create</a>
+          </div>
+
+        </div>
+        <!-- RIght :: Instagram Image -->
+        <div class="absolute  right-0 top-32">
+          <img src="images/hero_instaimg.png" alt="insta">
+        </div>
+      </div>
+    </section>
+
+    <!-- Hot Auctions -->
+    <section class="max-w-screen-xl mx-auto pt-8">
+      <h3 class="text-5xl	 text-white font-semibold">Hot auctions</h3>
+
+      <!--Auctions contents-->
+      <div class="grid gap-8 grid-cols-4 mt-8">
+        <div class="block">
+          <a href="#" class="block relative overflow-hidden height-0 aspect-thumb rounded-2xl">
+            <img src="images/img_auctions_01.png" alt="auction image" class="absolute left-0 top-0 w-full h-full">
+          </a>
+          <div class="flex justify-between items-center text-white mt-4 border-b border-b-white py-3">
+            <p class="text-md font-semibold">Lorem Ipsum</p>
+            <p class="font-md">1.20 Weth</p>
+          </div>
+          <div class="flex justify-between items-center text-white pt-8">
+            <p><span class="text-nav-color">Ends in</span> 01.34.45</p>
+            <a href="#" class="border border-white px-8 py-1 rounded-md text-white">Bid</a>
+          </div>
+        </div>
+        <div class="block">
+          <a href="#" class="block relative overflow-hidden height-0 aspect-thumb rounded-2xl">
+            <img src="images/img_auctions_02.png" alt="auction image" class="absolute left-0 top-0 w-full h-full">
+          </a>
+          <div class="flex justify-between items-center text-white mt-4 border-b border-b-white py-3">
+            <p class="text-md font-semibold">Dolor sit amet</p>
+            <p class="font-md">0.21 Weth</p>
+          </div>
+          <div class="flex justify-between items-center text-white pt-8">
+            <p><span class="text-nav-color">Ends in</span> 01.34.45</p>
+            <a href="#" class="border border-white px-8 py-1 rounded-md text-white">Bid</a>
+          </div>
+        </div>
+        <div class="block">
+          <a href="#" class="block relative overflow-hidden height-0 aspect-thumb rounded-2xl">
+            <img src="images/img_auctions_03.png" alt="auction image" class="absolute left-0 top-0 w-full h-full">
+          </a>
+          <div class="flex justify-between items-center text-white mt-4 border-b border-b-white py-3">
+            <p class="text-md font-semibold">Amet pellentesq..</p>
+            <p class="font-md">1.20 Weth</p>
+          </div>
+          <div class="flex justify-between items-center text-white pt-8">
+            <p><span class="text-nav-color">Ends in</span> 01.34.45</p>
+            <a href="#" class="border border-white px-8 py-1 rounded-md text-white">Bid</a>
+          </div>
+        </div>
+        <div class="block">
+          <a href="#" class="block relative overflow-hidden height-0 aspect-thumb rounded-2xl">
+            <img src="images/img_auctions_04.png" alt="auction image" class="absolute left-0 top-0 w-full h-full">
+          </a>
+          <div class="flex justify-between items-center text-white mt-4 border-b border-b-white py-3">
+            <p class="text-md font-semibold">Dignissim curabitu..</p>
+            <p class="font-md">0.01 Weth</p>
+          </div>
+          <div class="flex justify-between items-center text-white pt-8">
+            <p><span class="text-nav-color">Ends in</span> 01.34.45</p>
+            <a href="#" class="border border-white px-8 py-1 rounded-md text-white">Bid</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Getting started -->
+    <section class="bg-[url('images/bg_gettingstarted.png')] bg-no-repeat bg-center bg-cover py-44">
+      <div class="max-w-screen-xl mx-auto ">
+        <h3 class="text-5xl	 text-white font-semibold text-center ">Getting started</h3>
+        <p class="text-md text-nav-color text-center mt-6">Eu, molestie commodo, enim pellentesque turpis integer
+          sagittis</p>
+
+        <!-- Contents -->
+        <div class="flex justify-between items-start max-w-5xl mx-auto mt-20">
+          <div class="text-white hover:text-gradient-end">
+            <div
+              class="flex items-center justify-center rounded-xl bg-white/10 w-36	aspect-thumb drop-shadow-2xl mx-auto">
+              <svg width="47" height="53" viewBox="0 0 47 53" xmlns="http://www.w3.org/2000/svg" class="fill-white">
+                <path
+                  d="M33.9041 21.5345C34.5875 20.8511 34.5875 19.743 33.9041 19.0596C33.2207 18.3762 32.1127 18.3762 31.4292 19.0596L21 29.4888L16.4041 24.8929C15.7207 24.2095 14.6126 24.2095 13.9292 24.8929C13.2458 25.5763 13.2458 26.6844 13.9292 27.3678L19.7626 33.2011C20.446 33.8846 21.554 33.8846 22.2374 33.2011L33.9041 21.5345Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M24.5931 0.199174C23.7742 -0.0663909 22.8924 -0.0663914 22.0736 0.199173L2.82361 6.44242C1.1421 6.98777 0 8.55231 0 10.3242V22.047C1.20997e-05 36.4888 8.79852 47.0251 21.9357 51.9821C22.8355 52.3216 23.8312 52.3216 24.731 51.9821C37.8682 47.0251 46.6667 36.4888 46.6667 22.047V10.3249C46.6667 8.55355 45.5251 6.98795 43.8431 6.44242L24.5931 0.199174ZM23.1534 3.52845C23.2703 3.49052 23.3963 3.49052 23.5133 3.52845L42.7633 9.7717C43.0052 9.85016 43.1667 10.0735 43.1667 10.3249V22.047C43.1667 34.7902 35.5116 44.1734 23.4954 48.7075C23.3919 48.7465 23.2748 48.7465 23.1713 48.7075C11.1551 44.1734 3.50001 34.7902 3.5 22.047L3.5 10.3242C3.5 10.0735 3.66089 9.85034 3.90337 9.7717L23.1534 3.52845Z" />
+              </svg>
+            </div>
+            <p class="text-center mt-4 ">Connect your wallet</p>
+          </div>
+          <div class="text-white hover:text-gradient-end">
+            <div
+              class="flex items-center justify-center rounded-xl bg-white/10 w-36	aspect-thumb drop-shadow-2xl mx-auto">
+              <svg width="56" height="56" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg" class="fill-white">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M6.41666 4.66667C4.1615 4.66667 2.33333 6.49484 2.33333 8.75001V16.9167C2.33333 19.1718 4.1615 21 6.41666 21H49.5833C51.8385 21 53.6667 19.1718 53.6667 16.9167V8.75001C53.6667 6.49484 51.8385 4.66667 49.5833 4.66667H6.41666ZM49.5833 8.16667H6.41666C6.0945 8.16667 5.83333 8.42784 5.83333 8.75001V16.9167C5.83333 17.2388 6.0945 17.5 6.41666 17.5H49.5833C49.9055 17.5 50.1667 17.2388 50.1667 16.9167V8.75001C50.1667 8.42784 49.9055 8.16667 49.5833 8.16667Z" />
+                <path
+                  d="M6.41666 23.3333C7.38316 23.3333 8.16666 24.1168 8.16666 25.0833V47.25C8.16666 47.5722 8.42783 47.8333 8.74999 47.8333H47.25C47.5722 47.8333 47.8333 47.5722 47.8333 47.25V25.0833C47.8333 24.1168 48.6168 23.3333 49.5833 23.3333C50.5498 23.3333 51.3333 24.1168 51.3333 25.0833V47.25C51.3333 49.5052 49.5052 51.3333 47.25 51.3333H8.74999C6.49483 51.3333 4.66666 49.5052 4.66666 47.25V25.0833C4.66666 24.1168 5.45016 23.3333 6.41666 23.3333Z" />
+                <path
+                  d="M22.75 26.8333C21.7835 26.8333 21 27.6168 21 28.5833C21 29.5498 21.7835 30.3333 22.75 30.3333H33.25C34.2165 30.3333 35 29.5498 35 28.5833C35 27.6168 34.2165 26.8333 33.25 26.8333H22.75Z" />
+              </svg>
+            </div>
+            <p class="text-center mt-4">Connect your wallet</p>
+          </div>
+          <div class="text-white hover:text-gradient-end">
+            <div
+              class="flex items-center justify-center rounded-xl bg-white/10 w-36	aspect-thumb drop-shadow-2xl mx-auto">
+              <svg width="56" height="56" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg" class="fill-white">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M5.25 9.33333C4.92783 9.33333 4.66666 9.5945 4.66666 9.91666V46.0833C4.66666 46.4055 4.92783 46.6667 5.25 46.6667H12.6654L32.6658 25.6136C34.2472 23.9489 36.8899 23.9151 38.5135 25.5387L51.3333 38.3585V9.91666C51.3333 9.5945 51.0722 9.33333 50.75 9.33333H5.25ZM50.75 50.1667H13.4265H13.4063H5.25C2.99484 50.1667 1.16666 48.3385 1.16666 46.0833V9.91666C1.16666 7.6615 2.99484 5.83333 5.25 5.83333H50.75C53.0052 5.83333 54.8333 7.6615 54.8333 9.91666V46.0833C54.8333 48.3385 53.0052 50.1667 50.75 50.1667ZM35.2033 28.0243L17.493 46.6667H50.75C51.0722 46.6667 51.3333 46.4055 51.3333 46.0833V43.3082L36.0387 28.0136C35.8067 27.7816 35.4292 27.7864 35.2033 28.0243ZM21 21.5833C21 23.8385 19.1718 25.6667 16.9167 25.6667C14.6615 25.6667 12.8333 23.8385 12.8333 21.5833C12.8333 19.3282 14.6615 17.5 16.9167 17.5C19.1718 17.5 21 19.3282 21 21.5833ZM24.5 21.5833C24.5 25.7715 21.1048 29.1667 16.9167 29.1667C12.7285 29.1667 9.33333 25.7715 9.33333 21.5833C9.33333 17.3952 12.7285 14 16.9167 14C21.1048 14 24.5 17.3952 24.5 21.5833Z" />
+              </svg>
+            </div>
+            <p class="text-center mt-4">Connect your wallet</p>
+          </div>
+          <div class="text-white hover:text-gradient-end">
+            <div
+              class="flex items-center justify-center rounded-xl bg-white/10 w-36	aspect-thumb drop-shadow-2xl mx-auto">
+              <svg width="56" height="56" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg" class="fill-white">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M47.4168 1.75C41.0223 1.75 34.8692 4.19223 30.2152 8.5775L27.1713 11.4456C25.914 12.6303 24.7138 13.8722 23.5743 15.167H11.8211C10.3868 15.167 9.05764 15.9195 8.31968 17.1494L1.99939 27.6833C1.7082 28.1686 1.6697 28.7648 1.89605 29.2835C2.1224 29.8022 2.58565 30.1795 3.13948 30.2961L13.8068 32.5418C13.897 32.6567 13.9969 32.7661 14.1062 32.8687L18.7635 37.2393L23.1314 41.8939C23.2341 42.0033 23.3435 42.1032 23.4584 42.1935L25.7042 52.8608C25.8208 53.4146 26.198 53.8779 26.7168 54.1042C27.2355 54.3306 27.8317 54.2921 28.317 54.0009L38.8509 47.6806C40.0808 46.9426 40.8333 45.6135 40.8333 44.1792V32.4251C42.1287 31.285 43.3711 30.0841 44.5562 28.8261L47.4217 25.7843C51.8076 21.1287 54.2492 14.9734 54.2474 8.57724L54.2466 5.83214C54.2459 3.57744 52.4179 1.75 50.1632 1.75H47.4168ZM37.3333 35.2618C36.5571 35.8402 35.7655 36.3986 34.9591 36.9361L27.0398 42.2156L28.623 49.7356L37.0501 44.6794C37.2258 44.574 37.3333 44.3841 37.3333 44.1792V35.2618ZM13.7844 28.9604L19.0656 21.0386C19.6026 20.2331 20.1603 19.4423 20.738 18.667H11.8211C11.6162 18.667 11.4263 18.7745 11.3209 18.9502L6.26464 27.3773L13.7844 28.9604ZM32.6154 11.1248C36.62 7.35145 41.9146 5.25 47.4168 5.25H50.1632C50.4853 5.25 50.7465 5.51106 50.7466 5.83316L50.7474 8.57827C50.749 14.0819 48.648 19.3783 44.8741 23.3844L42.0086 26.4261C39.3093 29.2914 36.293 31.8404 33.0176 34.024L25.3456 39.1387L21.2777 34.8038C21.2523 34.7768 21.2261 34.7505 21.1991 34.7252L16.8615 30.6545L21.9778 22.9801C24.1603 19.7063 26.7079 16.6912 29.5715 13.9929L32.6154 11.1248ZM40.8333 18.6667C40.8333 20.5997 39.2663 22.1667 37.3333 22.1667C35.4003 22.1667 33.8333 20.5997 33.8333 18.6667C33.8333 16.7337 35.4003 15.1667 37.3333 15.1667C39.2663 15.1667 40.8333 16.7337 40.8333 18.6667ZM15.1666 49C17.2662 46.9004 17.2663 42.9331 15.1667 40.8334C13.0671 38.7338 9.09958 38.7338 6.99995 40.8334C4.17943 43.6539 3.62831 49.9363 3.52372 51.9009C3.5062 52.23 3.77002 52.4938 4.09907 52.4762C6.0638 52.3715 12.3466 51.8201 15.1666 49Z" />
+              </svg>
+            </div>
+            <p class="text-center mt-4">Connect your wallet</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Discover -->
+    <section class="max-w-screen-xl mx-auto pt-8">
+      <div class="flex  justify-between ">
+        <h3 class="text-5xl	 text-white font-semibold">Discover</h3>
+
+        <div class="flex items-center">
+          <button class="transition-all flex items-center  text-white py-2 px-8 text-2xl	center  hover:border-b border-white">
+            <span class="block ml-2">Category</span>
+          </button>
+          <button class="transition-all flex items-center  text-white py-2 px-8 text-2xl	center  ml-2 hover:border-b border-white">Cheapest</button>
+          <button class="transition-all flex items-center  text-white py-2 px-8 text-2xl	center  ml-2 hover:border-b border-white">Newest</button>
+          <button class="flex items-center rounded-md text-white py-2 px-8 text-2xl	center ml-2 bg-gradient-to-r from-gradient-start to-gradient-end">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" class="fill-transparent">
+              <path
+                d="M3.16052 4C3.16052 3.44772 3.60824 3 4.16052 3H20.4319C20.9842 3 21.4319 3.44772 21.4319 4V6.5814C21.4319 6.84921 21.3245 7.10583 21.1337 7.29377L14.6246 13.7062C14.4338 13.8942 14.3264 14.1508 14.3264 14.4186V17L10.2661 21V14.4186C10.2661 14.1508 10.1587 13.8942 9.96787 13.7062L3.45873 7.29377C3.26794 7.10583 3.16052 6.84921 3.16052 6.5814V4Z"
+                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span class="block ml-2">Filter</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="grid gap-8 gap-y-16	 grid-cols-4 mt-8">
+        <div class="block">
+          <a href="#" class="block relative overflow-hidden height-0 aspect-thumb rounded-2xl">
+            <img src="images/img_auctions_01.png" alt="auction image" class="absolute left-0 top-0 w-full h-full">
+          </a>
+          <div class="flex justify-between items-center text-white mt-4 border-b border-b-white py-3">
+            <p class="text-md font-semibold">Lorem Ipsum</p>
+            <p class="font-md">1.20 Weth</p>
+          </div>
+          <div class="flex justify-between items-center text-white pt-8">
+            <p><span class="text-nav-color">Ends in</span> 01.34.45</p>
+            <a href="#" class="border border-white px-8 py-1 rounded-md text-white">Bid</a>
+          </div>
+        </div>
+        <div class="block">
+          <a href="#" class="block relative overflow-hidden height-0 aspect-thumb rounded-2xl">
+            <img src="images/img_auctions_02.png" alt="auction image" class="absolute left-0 top-0 w-full h-full">
+          </a>
+          <div class="flex justify-between items-center text-white mt-4 border-b border-b-white py-3">
+            <p class="text-md font-semibold">Dolor sit amet</p>
+            <p class="font-md">0.21 Weth</p>
+          </div>
+          <div class="flex justify-between items-center text-white pt-8">
+            <p><span class="text-nav-color">Ends in</span> 01.34.45</p>
+            <a href="#" class="border border-white px-8 py-1 rounded-md text-white">Bid</a>
+          </div>
+        </div>
+        <div class="block">
+          <a href="#" class="block relative overflow-hidden height-0 aspect-thumb rounded-2xl">
+            <img src="images/img_auctions_03.png" alt="auction image" class="absolute left-0 top-0 w-full h-full">
+          </a>
+          <div class="flex justify-between items-center text-white mt-4 border-b border-b-white py-3">
+            <p class="text-md font-semibold">Amet pellentesq..</p>
+            <p class="font-md">1.20 Weth</p>
+          </div>
+          <div class="flex justify-between items-center text-white pt-8">
+            <p><span class="text-nav-color">Ends in</span> 01.34.45</p>
+            <a href="#" class="border border-white px-8 py-1 rounded-md text-white">Bid</a>
+          </div>
+        </div>
+        <div class="block">
+          <a href="#" class="block relative overflow-hidden height-0 aspect-thumb rounded-2xl">
+            <img src="images/img_auctions_04.png" alt="auction image" class="absolute left-0 top-0 w-full h-full">
+          </a>
+          <div class="flex justify-between items-center text-white mt-4 border-b border-b-white py-3">
+            <p class="text-md font-semibold">Dignissim curabitu..</p>
+            <p class="font-md">0.01 Weth</p>
+          </div>
+          <div class="flex justify-between items-center text-white pt-8">
+            <p><span class="text-nav-color">Ends in</span> 01.34.45</p>
+            <a href="#" class="border border-white px-8 py-1 rounded-md text-white">Bid</a>
+          </div>
+        </div>
+        <div class="block">
+          <a href="#" class="block relative overflow-hidden height-0 aspect-thumb rounded-2xl">
+            <img src="images/img_auctions_01.png" alt="auction image" class="absolute left-0 top-0 w-full h-full">
+          </a>
+          <div class="flex justify-between items-center text-white mt-4 border-b border-b-white py-3">
+            <p class="text-md font-semibold">Lorem Ipsum</p>
+            <p class="font-md">1.20 Weth</p>
+          </div>
+          <div class="flex justify-between items-center text-white pt-8">
+            <p><span class="text-nav-color">Ends in</span> 01.34.45</p>
+            <a href="#" class="border border-white px-8 py-1 rounded-md text-white">Bid</a>
+          </div>
+        </div>
+        <div class="block">
+          <a href="#" class="block relative overflow-hidden height-0 aspect-thumb rounded-2xl">
+            <img src="images/img_auctions_02.png" alt="auction image" class="absolute left-0 top-0 w-full h-full">
+          </a>
+          <div class="flex justify-between items-center text-white mt-4 border-b border-b-white py-3">
+            <p class="text-md font-semibold">Dolor sit amet</p>
+            <p class="font-md">0.21 Weth</p>
+          </div>
+          <div class="flex justify-between items-center text-white pt-8">
+            <p><span class="text-nav-color">Ends in</span> 01.34.45</p>
+            <a href="#" class="border border-white px-8 py-1 rounded-md text-white">Bid</a>
+          </div>
+        </div>
+        <div class="block">
+          <a href="#" class="block relative overflow-hidden height-0 aspect-thumb rounded-2xl">
+            <img src="images/img_auctions_03.png" alt="auction image" class="absolute left-0 top-0 w-full h-full">
+          </a>
+          <div class="flex justify-between items-center text-white mt-4 border-b border-b-white py-3">
+            <p class="text-md font-semibold">Amet pellentesq..</p>
+            <p class="font-md">1.20 Weth</p>
+          </div>
+          <div class="flex justify-between items-center text-white pt-8">
+            <p><span class="text-nav-color">Ends in</span> 01.34.45</p>
+            <a href="#" class="border border-white px-8 py-1 rounded-md text-white">Bid</a>
+          </div>
+        </div>
+        <div class="block">
+          <a href="#" class="block relative overflow-hidden height-0 aspect-thumb rounded-2xl">
+            <img src="images/img_auctions_04.png" alt="auction image" class="absolute left-0 top-0 w-full h-full">
+          </a>
+          <div class="flex justify-between items-center text-white mt-4 border-b border-b-white py-3">
+            <p class="text-md font-semibold">Dignissim curabitu..</p>
+            <p class="font-md">0.01 Weth</p>
+          </div>
+          <div class="flex justify-between items-center text-white pt-8">
+            <p><span class="text-nav-color">Ends in</span> 01.34.45</p>
+            <a href="#" class="border border-white px-8 py-1 rounded-md text-white">Bid</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
