@@ -1,6 +1,6 @@
 module.exports = {
   content: [
-    './public/index.html',
+    './public/*.{html,js}',
     './src/**/*.{html,js}',
   ],
   theme: {
@@ -10,7 +10,9 @@ module.exports = {
     },
     fontSize: {
       '32': '2rem',
+      '2xl' : '1.5rem', 
       '5xl': '3rem',
+      '4xl': '2.5rem',
       '7xl': '5rem',
     },
     extend: {
@@ -21,17 +23,22 @@ module.exports = {
         'gradient-start': '#9B51E0',
         'gradient-end': '#3081ED',
         'text-gray': '#bcbcbc', 
-        'primary' : '#9B51E0',
+        'footer-copy' : '#828282',
       },
       aspectRatio: {
         'thumb': '4 / 4.1',
       },
       lineHeight: {
         '7xl': '1.14',
+      }, 
+      width: {
+        '35': '35%',
       }
-    },
+    }, 
   },
   plugins: [
+    require('tailwindcss'),
+    require('autoprefixer'),
     require('@tailwindcss/forms'),
     require('@tailwindcss/line-clamp'),
   ],

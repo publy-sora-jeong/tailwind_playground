@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
-  <link href="/public/output.css" rel="stylesheet">
+  <link href="output.css" rel="stylesheet">
 
   <title>Tailwind Playground</title>
 </head>
@@ -16,14 +16,14 @@
   <main class="block">
 
     <!-- HEADER -->
-    <header class="pt-8  flex justify-between items-center max-w-screen-xl		mx-auto ">
+    <header class="pt-8 flex justify-between items-center max-w-screen-xl mx-auto ">
       <!-- LOGO -->
       <h1 class=""><a href="#"><img src="images/logo_Gaslur.svg" alt="Gaslur"></a></h1>
 
       <!-- NAvigation -->
       <nav>
         <ul class="flex justify-between">
-          <li><a href="#" class="text-nav-color text-xs center px-4 hover:text-nav-hover ">Home</a></li>
+          <li><a href="#" class="text-nav-color text-xs center px-4 hover:text-nav-hover">Home</a></li>
           <li><a href="#" class="text-nav-color text-xs center px-4 hover:text-nav-hover">My profile</a></li>
           <li><a href="#" class="text-nav-color text-xs center px-4 hover:text-nav-hover">activity</a></li>
           <li><a href="#" class="text-nav-color text-xs center px-4 hover:text-nav-hover">how it works</a></li>
@@ -33,33 +33,32 @@
       <!-- SIGN-IN Link -->
       <div class="flex justify-between items-center">
         <a href="#"
-          class="block uppercase text-nav-color text-xs center border border-solid	 border-slate-300 rounded-md px-8 py-2 hover:text-nav-hover hover:border-[#9B51E0]">create</a>
+          class="block uppercase text-nav-color text-xs center border border-solid border-slate-300 rounded-md px-8 py-2 hover:text-nav-hover hover:border-[#9B51E0]">create</a>
         <a href="#" class="block uppercase text-nav-color text-xs center ml-8 hover:text-nav-hover">sign in</a>
       </div>
     </header>
-
 
     <!-- HERO -->
     <section class="max-w-screen-xl	mx-auto">
       <div class="relative py-44 bg-[url('images/bg_ellipse_pink.png')] bg-no-repeat bg-center bg-contain">
         <!-- Left :: text-->
         <div>
-          <h3 class="text-white font-semibold text-7xl leading-7xl w-full ">Discover, collect, <br />and charity in
-            <br />extraordinary NFT <br />marketplace</h3>
+          <h2 class="text-white font-semibold text-7xl leading-7xl w-full ">Discover, collect, <br />and charity in
+            <br />extraordinary NFT <br />marketplace</h2>
           <p class="text-nav-color font-nor mal text-2xl	w-full mt-6">In aenean posuere lorem risus nec. Tempor
             <br />tincidunt aenean purus purus vestibulum nibh mi <br />venenatis</p>
 
           <!-- HERO Links-->
           <div class="flex justify-betwwen mt-8">
             <a href="#"
-              class="text-white w-52 py-4 text-center rounded-2xl border border-solid border-slate-100  transition-all	 duration-300  ease-in  hover:border-main-bg hover:bg-gradient-to-r from-gradient-start to-gradient-end">Explore</a>
+              class="text-white w-52 py-4 text-center rounded-2xl border border-solid border-slate-100 transition-all duration-300 ease-in hover:border-main-bg hover:bg-gradient-to-r from-gradient-start to-gradient-end">Explore</a>
             <a href="#"
-              class="text-white w-52 py-4 text-center rounded-2xl border border-solid border-slate-100  ml-8 transition-all	 duration-300  ease-in  hover:border-main-bg hover:bg-gradient-to-r from-gradient-start to-gradient-end">Create</a>
+              class="text-white w-52 py-4 text-center rounded-2xl border border-solid border-slate-100 ml-8 transition-all duration-300 ease-in hover:border-main-bg hover:bg-gradient-to-r from-gradient-start to-gradient-end">Create</a>
           </div>
 
         </div>
         <!-- RIght :: Instagram Image -->
-        <div class="absolute  right-0 top-32">
+        <div class="absolute right-0 top-32">
           <img src="images/hero_instaimg.png" alt="insta">
         </div>
       </div>
@@ -67,7 +66,16 @@
 
     <!-- Hot Auctions -->
     <section class="max-w-screen-xl mx-auto pt-8">
-      <h3 class="text-5xl	 text-white font-semibold">Hot auctions</h3>
+      <div class="flex justify-between items-center">
+        <h2 class="text-5xl text-white font-semibold">Hot auctions</h2>
+        <a href="#" class="text-nav-color text-2xl flex items-center font-semibold">View All
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-4">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M13.2197 19.0303C13.5126 19.3232 13.9874 19.3232 14.2803 19.0303L20.5303 12.7803C20.8232 12.4874 20.8232 12.0126 20.5303 11.7197L14.2803 5.46967C13.9874 5.17678 13.5126 5.17678 13.2197 5.46967C12.9268 5.76256 12.9268 6.23744 13.2197 6.53033L18.1893 11.5L3.75 11.5C3.33579 11.5 3 11.8358 3 12.25C3 12.6642 3.33579 13 3.75 13L18.1893 13L13.2197 17.9697C12.9268 18.2626 12.9268 18.7374 13.2197 19.0303Z"
+              fill="#D7D7D7" />
+          </svg>
+        </a>
+      </div>
 
       <!--Auctions contents-->
       <div class="grid gap-8 grid-cols-4 mt-8">
@@ -81,7 +89,8 @@
           </div>
           <div class="flex justify-between items-center text-white pt-8">
             <p><span class="text-nav-color">Ends in</span> 01.34.45</p>
-            <a href="#" class="border border-white px-8 py-1 rounded-md text-white">Bid</a>
+            <a href="#"
+              class="transition-all border border-white px-8 py-1 rounded-md text-white hover:bg-gradient-start hover:border-white/10">Bid</a>
           </div>
         </div>
         <div class="block">
@@ -94,7 +103,8 @@
           </div>
           <div class="flex justify-between items-center text-white pt-8">
             <p><span class="text-nav-color">Ends in</span> 01.34.45</p>
-            <a href="#" class="border border-white px-8 py-1 rounded-md text-white">Bid</a>
+            <a href="#"
+              class="transition-all border border-white px-8 py-1 rounded-md text-white hover:bg-gradient-start hover:border-white/10">Bid</a>
           </div>
         </div>
         <div class="block">
@@ -107,7 +117,8 @@
           </div>
           <div class="flex justify-between items-center text-white pt-8">
             <p><span class="text-nav-color">Ends in</span> 01.34.45</p>
-            <a href="#" class="border border-white px-8 py-1 rounded-md text-white">Bid</a>
+            <a href="#"
+              class="transition-all border border-white px-8 py-1 rounded-md text-white hover:bg-gradient-start hover:border-white/10">Bid</a>
           </div>
         </div>
         <div class="block">
@@ -120,7 +131,8 @@
           </div>
           <div class="flex justify-between items-center text-white pt-8">
             <p><span class="text-nav-color">Ends in</span> 01.34.45</p>
-            <a href="#" class="border border-white px-8 py-1 rounded-md text-white">Bid</a>
+            <a href="#"
+              class="transition-all border border-white px-8 py-1 rounded-md text-white hover:bg-gradient-start hover:border-white/10">Bid</a>
           </div>
         </div>
       </div>
@@ -130,7 +142,7 @@
     <!-- Getting started -->
     <section class="bg-[url('images/bg_gettingstarted.png')] bg-no-repeat bg-center bg-cover py-44">
       <div class="max-w-screen-xl mx-auto ">
-        <h3 class="text-5xl	 text-white font-semibold text-center ">Getting started</h3>
+        <h2 class="text-5xl text-white font-semibold text-center ">Getting started</h2>
         <p class="text-md text-nav-color text-center mt-6">Eu, molestie commodo, enim pellentesque turpis integer
           sagittis</p>
 
@@ -188,16 +200,20 @@
 
     <!-- Discover -->
     <section class="max-w-screen-xl mx-auto pt-8">
-      <div class="flex  justify-between ">
-        <h3 class="text-5xl	 text-white font-semibold">Discover</h3>
+      <div class="flex justify-between ">
+        <h2 class="text-5xl text-white font-semibold">Discover</h2>
 
         <div class="flex items-center">
-          <button class="transition-all flex items-center  text-white py-2 px-8 text-2xl	center  hover:border-b border-white">
+          <button type="button"
+            class="transition-all flex items-center text-white py-2 px-8 text-2xl	center hover:text-gradient-start">
             <span class="block ml-2">Category</span>
           </button>
-          <button class="transition-all flex items-center  text-white py-2 px-8 text-2xl	center  ml-2 hover:border-b border-white">Cheapest</button>
-          <button class="transition-all flex items-center  text-white py-2 px-8 text-2xl	center  ml-2 hover:border-b border-white">Newest</button>
-          <button class="flex items-center rounded-md text-white py-2 px-8 text-2xl	center ml-2 bg-gradient-to-r from-gradient-start to-gradient-end">
+          <button type="button"
+            class="transition-all flex items-center text-white py-2 px-8 text-2xl	center ml-2 hover:text-gradient-start">Cheapest</button>
+          <button type="button"
+            class="transition-all flex items-center text-white py-2 px-8 text-2xl	center ml-2 hover:text-gradient-start">Newest</button>
+          <button type="button"
+            class="flex items-center rounded-md text-white py-2 px-8 text-2xl	center ml-2 bg-gradient-to-r from-gradient-start to-gradient-end">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" class="fill-transparent">
               <path
                 d="M3.16052 4C3.16052 3.44772 3.60824 3 4.16052 3H20.4319C20.9842 3 21.4319 3.44772 21.4319 4V6.5814C21.4319 6.84921 21.3245 7.10583 21.1337 7.29377L14.6246 13.7062C14.4338 13.8942 14.3264 14.1508 14.3264 14.4186V17L10.2661 21V14.4186C10.2661 14.1508 10.1587 13.8942 9.96787 13.7062L3.45873 7.29377C3.26794 7.10583 3.16052 6.84921 3.16052 6.5814V4Z"
@@ -208,10 +224,10 @@
         </div>
       </div>
 
-      <div class="grid gap-8 gap-y-16	 grid-cols-4 mt-8">
+      <div class="grid gap-8 gap-y-16 grid-cols-4 mt-8">
         <div class="block">
           <a href="#" class="block relative overflow-hidden height-0 aspect-thumb rounded-2xl">
-            <img src="images/img_auctions_01.png" alt="auction image" class="absolute left-0 top-0 w-full h-full">
+            <img src="images/img_getting_01.png" alt="auction image" class="absolute left-0 top-0 w-full h-full">
           </a>
           <div class="flex justify-between items-center text-white mt-4 border-b border-b-white py-3">
             <p class="text-md font-semibold">Lorem Ipsum</p>
@@ -219,12 +235,13 @@
           </div>
           <div class="flex justify-between items-center text-white pt-8">
             <p><span class="text-nav-color">Ends in</span> 01.34.45</p>
-            <a href="#" class="border border-white px-8 py-1 rounded-md text-white">Bid</a>
+            <a href="#"
+              class="transition-all border border-white px-8 py-1 rounded-md text-white hover:bg-gradient-start hover:border-white/10">Bid</a>
           </div>
         </div>
         <div class="block">
           <a href="#" class="block relative overflow-hidden height-0 aspect-thumb rounded-2xl">
-            <img src="images/img_auctions_02.png" alt="auction image" class="absolute left-0 top-0 w-full h-full">
+            <img src="images/img_getting_02.png" alt="auction image" class="absolute left-0 top-0 w-full h-full">
           </a>
           <div class="flex justify-between items-center text-white mt-4 border-b border-b-white py-3">
             <p class="text-md font-semibold">Dolor sit amet</p>
@@ -232,12 +249,13 @@
           </div>
           <div class="flex justify-between items-center text-white pt-8">
             <p><span class="text-nav-color">Ends in</span> 01.34.45</p>
-            <a href="#" class="border border-white px-8 py-1 rounded-md text-white">Bid</a>
+            <a href="#"
+              class="transition-all border border-white px-8 py-1 rounded-md text-white hover:bg-gradient-start hover:border-white/10">Bid</a>
           </div>
         </div>
         <div class="block">
           <a href="#" class="block relative overflow-hidden height-0 aspect-thumb rounded-2xl">
-            <img src="images/img_auctions_03.png" alt="auction image" class="absolute left-0 top-0 w-full h-full">
+            <img src="images/img_getting_03.png" alt="auction image" class="absolute left-0 top-0 w-full h-full">
           </a>
           <div class="flex justify-between items-center text-white mt-4 border-b border-b-white py-3">
             <p class="text-md font-semibold">Amet pellentesq..</p>
@@ -245,12 +263,13 @@
           </div>
           <div class="flex justify-between items-center text-white pt-8">
             <p><span class="text-nav-color">Ends in</span> 01.34.45</p>
-            <a href="#" class="border border-white px-8 py-1 rounded-md text-white">Bid</a>
+            <a href="#"
+              class="transition-all border border-white px-8 py-1 rounded-md text-white hover:bg-gradient-start hover:border-white/10">Bid</a>
           </div>
         </div>
         <div class="block">
           <a href="#" class="block relative overflow-hidden height-0 aspect-thumb rounded-2xl">
-            <img src="images/img_auctions_04.png" alt="auction image" class="absolute left-0 top-0 w-full h-full">
+            <img src="images/img_getting_04.png" alt="auction image" class="absolute left-0 top-0 w-full h-full">
           </a>
           <div class="flex justify-between items-center text-white mt-4 border-b border-b-white py-3">
             <p class="text-md font-semibold">Dignissim curabitu..</p>
@@ -258,12 +277,13 @@
           </div>
           <div class="flex justify-between items-center text-white pt-8">
             <p><span class="text-nav-color">Ends in</span> 01.34.45</p>
-            <a href="#" class="border border-white px-8 py-1 rounded-md text-white">Bid</a>
+            <a href="#"
+              class="transition-all border border-white px-8 py-1 rounded-md text-white hover:bg-gradient-start hover:border-white/10">Bid</a>
           </div>
         </div>
         <div class="block">
           <a href="#" class="block relative overflow-hidden height-0 aspect-thumb rounded-2xl">
-            <img src="images/img_auctions_01.png" alt="auction image" class="absolute left-0 top-0 w-full h-full">
+            <img src="images/img_getting_05.png" alt="auction image" class="absolute left-0 top-0 w-full h-full">
           </a>
           <div class="flex justify-between items-center text-white mt-4 border-b border-b-white py-3">
             <p class="text-md font-semibold">Lorem Ipsum</p>
@@ -271,12 +291,13 @@
           </div>
           <div class="flex justify-between items-center text-white pt-8">
             <p><span class="text-nav-color">Ends in</span> 01.34.45</p>
-            <a href="#" class="border border-white px-8 py-1 rounded-md text-white">Bid</a>
+            <a href="#"
+              class="transition-all border border-white px-8 py-1 rounded-md text-white hover:bg-gradient-start hover:border-white/10">Bid</a>
           </div>
         </div>
         <div class="block">
           <a href="#" class="block relative overflow-hidden height-0 aspect-thumb rounded-2xl">
-            <img src="images/img_auctions_02.png" alt="auction image" class="absolute left-0 top-0 w-full h-full">
+            <img src="images/img_getting_06.png" alt="auction image" class="absolute left-0 top-0 w-full h-full">
           </a>
           <div class="flex justify-between items-center text-white mt-4 border-b border-b-white py-3">
             <p class="text-md font-semibold">Dolor sit amet</p>
@@ -284,12 +305,13 @@
           </div>
           <div class="flex justify-between items-center text-white pt-8">
             <p><span class="text-nav-color">Ends in</span> 01.34.45</p>
-            <a href="#" class="border border-white px-8 py-1 rounded-md text-white">Bid</a>
+            <a href="#"
+              class="transition-all border border-white px-8 py-1 rounded-md text-white hover:bg-gradient-start hover:border-white/10">Bid</a>
           </div>
         </div>
         <div class="block">
           <a href="#" class="block relative overflow-hidden height-0 aspect-thumb rounded-2xl">
-            <img src="images/img_auctions_03.png" alt="auction image" class="absolute left-0 top-0 w-full h-full">
+            <img src="images/img_getting_07.png" alt="auction image" class="absolute left-0 top-0 w-full h-full">
           </a>
           <div class="flex justify-between items-center text-white mt-4 border-b border-b-white py-3">
             <p class="text-md font-semibold">Amet pellentesq..</p>
@@ -297,12 +319,13 @@
           </div>
           <div class="flex justify-between items-center text-white pt-8">
             <p><span class="text-nav-color">Ends in</span> 01.34.45</p>
-            <a href="#" class="border border-white px-8 py-1 rounded-md text-white">Bid</a>
+            <a href="#"
+              class="transition-all border border-white px-8 py-1 rounded-md text-white hover:bg-gradient-start hover:border-white/10">Bid</a>
           </div>
         </div>
         <div class="block">
           <a href="#" class="block relative overflow-hidden height-0 aspect-thumb rounded-2xl">
-            <img src="images/img_auctions_04.png" alt="auction image" class="absolute left-0 top-0 w-full h-full">
+            <img src="images/img_getting_08.png" alt="auction image" class="absolute left-0 top-0 w-full h-full">
           </a>
           <div class="flex justify-between items-center text-white mt-4 border-b border-b-white py-3">
             <p class="text-md font-semibold">Dignissim curabitu..</p>
@@ -310,11 +333,63 @@
           </div>
           <div class="flex justify-between items-center text-white pt-8">
             <p><span class="text-nav-color">Ends in</span> 01.34.45</p>
-            <a href="#" class="border border-white px-8 py-1 rounded-md text-white">Bid</a>
+            <a href="#"
+              class="transition-all border border-white px-8 py-1 rounded-md text-white hover:bg-gradient-start hover:border-white/10">Bid</a>
           </div>
         </div>
       </div>
+
+      <div class="mt-20">
+        <button type="button" class="transition-all block text-xs text-nav-color py-2 font-medium px-8 border 
+     border-white/50 rounded-md uppercase mx-auto  hover:text-white/100 hover:border-white/100">LOAD MORE</button>
+      </div>
     </section>
+    <!-- footer -->
+    <footer class="pt-40">
+      <!-- footer navigation-->
+      <div role="navigation" class="flex justify-between max-w-screen-xl mx-auto border-b-2 border-nav-color border-solid pb-8" >
+        <p class="block w-35 text-4xl text-white font-medium tracking-tighter leading-12">Etiam et id tincidunt
+          faucibus mollis a sociis pretium fermentum quis magna faucibus lacus.
+        </p>
+        <ul class="flex justify-between w-4/6 pl-32">
+          <li><a href="#market" class="block text-white text-4xl font-medium ">Marketplace</a>
+            <ul>
+              <li><a href="#" class="block text-nav-color text-2xl pt-8">Home</a></li>
+              <li><a href="#" class="block text-nav-color text-2xl pt-8">Activity</a></li>
+              <li><a href="#" class="block text-nav-color text-2xl pt-8">Discover</a></li>
+              <li><a href="#" class="block text-nav-color text-2xl pt-8">Learn more</a></li>
+            </ul>
+          </li>
+          <li><a href="#company" class="block text-white text-4xl font-medium ">Company</a>
+            <ul>
+              <li><a href="#" class="block text-nav-color text-2xl pt-8">About Us</a></li>
+              <li><a href="#" class="block text-nav-color text-2xl pt-8">Services</a></li>
+              <li><a href="#" class="block text-nav-color text-2xl pt-8">Portfolio</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact" class="block text-white text-4xl font-medium ">Contact</a>
+            <ul>
+              <li><a href="#" class="block text-nav-color text-2xl pt-8">Facebook</a></li>
+              <li><a href="#" class="block text-nav-color text-2xl pt-8">Instagram</a></li>
+              <li><a href="#" class="block text-nav-color text-2xl pt-8">Twitter</a></li>
+              <li><a href="#" class="block text-nav-color text-2xl pt-8">Email</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <!--copy & sns -->
+      <div class="flex justify-between items-start pt-10 pb-8 max-w-screen-xl mx-auto">
+        <div class="flex items-center">
+          <a href="#" target="_blank" class="block"><img src="images/ico_Instagram.png" alt="instagram"></a>
+          <a href="#" target="_blank" class="block pl-6"><img src="images/ico_facebook.png" alt="Facebook"></a>
+          <a href="#" target="_blank" class="block pl-6"><img src="images/ico_twitter.png" alt="Twitter"></a>
+        </div>
+
+        <p class="text-footer-copy text-2xl">Copyright 2021 Gaslur</p>
+      </div>
+    </footer>
   </main>
 </body>
+
 </html>
